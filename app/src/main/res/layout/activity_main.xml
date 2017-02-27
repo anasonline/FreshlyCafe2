@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.freshlycafe.MainActivity">
+
+    <ImageView
+        android:id="@+id/cup"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/cup"
+        android:scaleType="centerCrop"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content"
+        android:text="Freshly Cafe"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:textSize="56sp"/>
+
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The best coffeeshop in town"
+        android:layout_below="@id/cup"
+        android:layout_margin="16dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+    android:id="@+id/locationIcon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/location"
+    android:layout_below="@id/mainTitle"
+    android:layout_marginLeft="16dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alexanderst. 26, Berlin 10629"
+        android:textSize="16dp"
+        android:layout_below="@id/mainTitle"
+        android:layout_toRightOf="@id/locationIcon"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/phoneIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phone"
+        android:layout_below="@id/locationIcon"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="311-200-200-01"
+        android:textSize="16sp"
+        android:layout_below="@id/locationIcon"
+        android:layout_toRightOf="@id/phoneIcon"
+        android:layout_marginBottom="8dp" />
+
+
+    <ImageView
+        android:id="@+id/emailIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/email"
+        android:layout_below="@id/phoneIcon"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/emailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="info@freshlycafe.com"
+        android:textSize="16sp"
+        android:layout_below="@id/phoneIcon"
+        android:layout_toRightOf="@id/emailIcon"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Freshly Cafe offers its customers the best tasting coffee beverages in the area. We specialise in espresso drinks, brewed coffee and teas, as well as some refreshment beverages. We also offer our clients pastries, small salads and sandwiches."
+        android:layout_below="@id/emailIcon"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:text="Openning hours: Mon - Sun / 09:00 - 23:00"
+        android:textStyle="italic"
+        android:paddingLeft="16dp"/>
+
+</RelativeLayout>
+
